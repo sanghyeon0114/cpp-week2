@@ -12,8 +12,7 @@ int inputAnswer() {
 }
 
 int getRandomAnswer() {
-    int random = getRandomValue();
-    return random;
+    return getRandomValue();
 }
 
 int inputGuess() {
@@ -78,5 +77,17 @@ bool isThreeStrikes(int strike) {
             cout << "You win!" << endl;
             return true;
     } 
+    return false;
+}
+
+void printChanceCount(int chances) {
+    cout << chances << " chances left." << endl;
+}
+
+bool isLose(int chances) {
+    if(chances == 0) {
+        cout << "You lose!" << endl;
+        return true;
+    }
     return false;
 }
