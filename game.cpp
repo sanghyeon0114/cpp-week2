@@ -13,11 +13,6 @@ int inputAnswer() {
 
 int getRandomAnswer() {
     int random = getRandomValue();
-    if(random / 100 == 0) {
-        cout << "Answer is 0" << random << endl;
-    } else {
-        cout << "Answer is " << random << endl;
-    }
     return random;
 }
 
