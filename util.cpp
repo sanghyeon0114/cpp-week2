@@ -1,4 +1,5 @@
 #include <iostream>
+#include <time.h>
 
 using namespace std;
 
@@ -27,4 +28,13 @@ int inputValidValue(string message) {
     } while(!checkDigits(answer));
 
     return answer;
+}
+
+int getRandomValue() {
+    srand(time(NULL));
+    int random = rand() % 1000;
+    while(!checkDigits(random)) {
+        random = rand() % 1000;
+    }
+    return random;
 }

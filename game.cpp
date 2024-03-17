@@ -5,9 +5,20 @@ using namespace std;
 // util.cpp
 int inputValidValue(string message);
 bool checkDigits(int digits);
+int getRandomValue();
 
 int inputAnswer() {
     return inputValidValue("Enter a answer: ");
+}
+
+int getRandomAnswer() {
+    int random = getRandomValue();
+    if(random / 100 == 0) {
+        cout << "Answer is 0" << random << endl;
+    } else {
+        cout << "Answer is " << random << endl;
+    }
+    return random;
 }
 
 int inputGuess() {

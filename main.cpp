@@ -1,5 +1,5 @@
 // game.cpp
-int inputAnswer();
+int getRandomAnswer();
 int inputGuess();
 int getBall(int answer, int guess);
 int getStrike(int answer, int guess);
@@ -9,8 +9,7 @@ bool isThreeStrikes(int strike);
 int main() {
     int strike = 0, ball = 0;
     int answer, guess;
-    answer = inputAnswer();
-
+    answer = getRandomAnswer();
 
     while(true) {  
         guess = inputGuess();
