@@ -1,0 +1,9 @@
+.vscode
+
+main.o
+
+game.o
+
+util.o
+
+main.exe
